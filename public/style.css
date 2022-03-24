@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 2rem;
+    font-family: sans-serif;
+}
+.wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 30%;
+    margin: 2rem auto;
+}
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    height: 480px;
+    position: relative;
+    border-radius: 13px;
+}
+.card__body:hover {
+    background-color: #5ec1d4;
+    color: #fff;
+}
+.card__body h2 {
+    margin: 20px 0 10px 0;
+    font-weight: 800;
+    font-size: 33px;
+}
+.card__body h1 {
+    margin: 20px 0;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.card__body p {
+    width: 70%;
+    font-size: 1rem;
+}
+img {
+    width: 250px;
+    position: absolute;
+    top: -60px
+}
+.card__btn {
+    padding: 0.75rem 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb331;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s linear;
+}
+.card__btn:hover {
+    transform: translateY(-3px);
+    background-color: #f0a625;
+}
+.card__btn:active {
+    transform: translateY(-2px);
+    background-color: #e29612;
+}
+.card__price-off {
+    position: absolute;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    border-radius: 2px;
+    background-color: #ff2400;
+    color: #fff;
+    top: -15px;
+    right: -15px;
+}
+/* Responsive styles */
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+    }
+    .card {
+        width: 45%;
+    } 
+}
+@media (min-width: 0) and (max-width: 425px) {
+    .wrapper {
+        width: 100%;
+    }
+    .card {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .card__body {
+        height: 470px;
+    }
+}
+@media (min-width: 0) and (max-width: 325px) {
+    .wrapper {
+        width: 100%;
+    }
+    .card {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .card__body {
+        height: 520px;
+    }
+}
